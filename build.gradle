@@ -14,11 +14,17 @@ buildscript {
     }
 }
 
+ext {
+    //roomVersion = '1.0.0-alpha4'
+    roomVersion = '2.0.0-rc01'
+    archLifecycleVersion = '2.0.0-rc01'
+}
 allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
     }
 }
 
